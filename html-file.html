@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi</h1>  <!--Headings-->
+    <h2>hi</h2>
+    <h3>hi</h3>
+    <h4>hi</h4>
+    <h5>hi</h5>
+    <h6>hi</h6> <!--Headings-->
+    
+    
+    <!-- Absolute URL: Links to a full external URL (e.g., ). -->
+<a href="https://example.com">Link</a> 
+<!-- Output: A link to an external website (e.g., https://example.com) -->
+<br>
+
+<!-- Relative URL: Links to a path relative to the current page (e.g., ). -->
+<a href="about.html">About</a> 
+<!-- Output: A link to the "about.html" page within the current site -->
+<br>
+
+<!-- Fragment Identifier: Links to an element on the same page (e.g., ). -->
+<a href="#section1">Go to Section 1</a> 
+<!-- Output: A link that scrolls to an element with the id="section1" on the current page -->
+<br>
+
+<!-- Email Link (mailto): Opens the user's email client (e.g., ). -->
+<a href="mailto:someone@example.com">Email Us</a> 
+<!-- Output: A link that opens the user's default email client with a new email addressed to someone@example.com -->
+<br>
+
+<!-- Phone Link (tel): Opens a dialer app (e.g.,) -->
+<a href="tel:+123456789">Call Us</a> 
+<!-- Output: A link that opens the phone dialer with the number +123456789 -->
+<br>
+
+<!-- Download Link: Links to a downloadable resource (e.g., ). -->
+<a href="file.pdf" download="example.pdf">Download File</a> 
+<!-- Output: A link that allows the user to download the file "file.pdf" with the suggested filename "example.pdf" -->
+<br>
+
+<!-- Target Attribute: Specifies where to open the link (e.g., ). -->
+<a href="page.html" target="_blank">Open in a new tab</a> 
+<!-- Output: A link that opens "page.html" in a new tab -->
+<br>
+
+<!-- Rel Attribute: Specifies the relationship between the current document and the linked resource (e.g., ). -->
+<a href="/fr" hreflang="fr-FR" rel="alternate" lang="fr-FR">French Workshop</a> 
+<!-- Output: A link to the French version of the workshop page, indicating it's an alternate version -->
+<br>
+
+<!-- Descriptive Link Text: Clear and descriptive text for links (e.g., ). -->
+<a href="workshop-details.html">Learn more about our Machine Learning Workshop</a> 
+<!-- Output: A descriptive link to the "workshop-details.html" page -->
+<br>
+
+<!-- Focus Styles: Ensure links are focusable for keyboard navigation. -->
+<a href="about-us.html" style="outline: 2px solid blue;">About Us</a> 
+<!-- Output: A link to "about-us.html" with an outline when focused for accessibility -->
+<br>
+
+<!-- Avoid Nested Interactive Content: Don’t nest buttons or inputs inside <a> tags. -->
+<!-- Incorrect: -->
+<a href="login.html"><button>Login</button></a> <!-- Avoid this -->
+<!-- Output: This is incorrect because you shouldn't nest interactive elements like buttons inside <a> tags -->
+<br>
+
+<!-- Link Appearance: Links visually stand out from regular text (e.g., ). -->
+<a href="workshop-details.html" style="color: blue; text-decoration: underline;">Learn more about our workshop</a> 
+<!-- Output: A link to "workshop-details.html" styled with blue color and underlined text -->
+<br>
+
+<!-- Link and JavaScript: Manipulate links dynamically with JavaScript (e.g., ). -->
+<script>
+  document.links[0].href = 'newpage.html'; // Dynamically changing link URL
+</script> 
+<!-- Output: JavaScript changes the first link’s URL to "newpage.html" -->
+<br>
+
+<!-- Tracking Link Clicks: Uses the ping attribute to track link clicks (e.g., ). -->
+<a href="https://example.com" ping="https://tracker.com">Track this Link</a>
+<!-- Output: A link to "https://example.com" that notifies "https://tracker.com" when clicked -->
+<br>
+<!-- Unordered List: A list with no specific order (bulleted list). -->
+<ul>
+    <li>Machine 1</li>
+    <li>Machine 2</li>
+    <li>Machine 3</li>
+  </ul>
+  <!-- Output: A bulleted list of machines -->
+  
+  <br>
+  
+  <!-- Ordered List: A list with a specific order (numbered list). -->
+  <ol>
+    <li>First step</li>
+    <li>Second step</li>
+    <li>Third step</li>
+  </ol>
+  <!-- Output: A numbered list of steps -->
+  
+  <br>
+  
+  <!-- Nested List: A list inside another list. -->
+  <ul>
+    <li>First item
+      <ul>
+        <li>Nested item 1</li>
+        <li>Nested item 2</li>
+      </ul>
+    </li>
+    <li>Second item</li>
+  </ul>
+  <!-- Output: An unordered list with nested unordered items -->
+  
+  <br>
+  
+  <!-- List Item with Value Attribute: Sets a specific number for the list item in an ordered list. -->
+  <ol>
+    <li value="10">Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+  <!-- Output: An ordered list with a custom starting value for the first item (10) -->
+  
+  <br>
+  
+  <!-- Description List: A list of terms and descriptions. -->
+  <dl>
+    <dt>Term 1</dt>
+    <dd>Description of Term 1</dd>
+    <dt>Term 2</dt>
+    <dd>Description of Term 2</dd>
+  </dl>
+  <!-- Output: A description list with terms and their corresponding descriptions -->
+  
+  <br>
+  
+  <!-- Nested Description List: A description list inside another description list. -->
+  <dl>
+    <dt>Term 1</dt>
+    <dd>Description of Term 1</dd>
+    <dd>
+      <dl>
+        <dt>Subterm 1.1</dt>
+        <dd>Description of Subterm 1.1</dd>
+      </dl>
+    </dd>
+  </dl>
+  <!-- Output: A nested description list -->
+  
+  <br>
+  
+  <!-- Example of a description list with career aspirations for students. -->
+  <dl>
+    <dt>Blendan Smooth</dt>
+    <dd>Former Margarita Maker, Aspiring Load Balancer</dd>
+    <dt>Hoover Sukhdeep</dt>
+    <dd>Former Sucker, Aspiring DDoS Cop</dd>
+    <dt>Toasty McToastface</dt>
+    <dd>Formerly Half Baked, Aspiring Nuclear Codes Handler</dd>
+  </dl>
+  <!-- Output: A description list of students and their career aspirations -->
+  
+  <br>
+  
+  <!-- Example of nested lists in a table of contents. -->
+  <ul role="list">
+    <li>
+      <a href="#e">Elements</a>
+      <ul>
+        <li>
+          <a href="#nr">Non-replaced elements</a>
+        </li>
+        <li>
+          <a href="#rave">Replaced and void elements</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#a">Attributes</a>
+    </li>
+    <li>
+      <a href="#aoe">Appearance of elements</a>
+    </li>
+    <li>
+      <a href="#e2">Element, attributes, and JavaScript</a>
+    </li>
+  </ul>
+  <!-- Output: An unordered list with nested links to various sections of a document -->
+  
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- Skip to content link: Allows users to skip navigation -->
+<a href="#main" class="skip-link button">Skip to main content</a>
+
+<!-- Table of Contents Navigation -->
+<nav aria-labelledby="tocTitle">
+  <p id="tocTitle">On this page</p>
+  <ul role="list">
+    <li><a href="#skip">Skip to content</a></li>
+    <li><a href="#toc">Table of contents</a></li>
+    <li><a href="#bc">Page breadcrumbs</a></li>
+    <li><a href="#ln">Local navigation</a></li>
+    <li><a href="#global">Global navigation</a></li>
+  </ul>
+</nav>
+
+<!-- Breadcrumbs: Navigation hierarchy -->
+<nav aria-label="breadcrumbs">
+  <ol role="list">
+    <li><a href="/">Home</a></li>
+    <li><a href="/learn">Learn</a></li>
+    <li><a href="/learn/html">HTML</a></li>
+    <li aria-current="page">Navigation</li>
+  </ol>
+</nav>
+
+<!-- Local Navigation: Links to sections on the same page -->
+<ul>
+  <li><a href="#chapter1" aria-current="page">Chapter 1: Introduction</a></li>
+  <li><a href="#chapter2">Chapter 2: Basics</a></li>
+</ul>
+
+<!-- Global Navigation: Links available across all pages -->
+<nav>
+  <ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Sidebar Navigation (local) for smaller screens -->
+<div class="sidebar">
+  <a href="#section1">Section 1</a>
+  <a href="#section2">Section 2</a>
+</div>
+
+
+<!-- Skip to content link: Allows users to skip navigation -->
+<a href="#main" class="skip-link button">Skip to main content</a>
+
+<!-- Table of Contents Navigation -->
+<nav aria-labelledby="tocTitle">
+  <p id="tocTitle">On this page</p>
+  <ul role="list">
+    <li><a href="#skip">Skip to content</a></li>
+    <li><a href="#toc">Table of contents</a></li>
+    <li><a href="#bc">Page breadcrumbs</a></li>
+    <li><a href="#ln">Local navigation</a></li>
+    <li><a href="#global">Global navigation</a></li>
+  </ul>
+</nav>
+
+<!-- Breadcrumbs: Navigation hierarchy -->
+<nav aria-label="breadcrumbs">
+  <ol role="list">
+    <li><a href="/">Home</a></li>
+    <li><a href="/learn">Learn</a></li>
+    <li><a href="/learn/html">HTML</a></li>
+    <li aria-current="page">Navigation</li>
+  </ol>
+</nav>
+
+<!-- Local Navigation: Links to sections on the same page -->
+<ul>
+  <li><a href="#chapter1" aria-current="page">Chapter 1: Introduction</a></li>
+  <li><a href="#chapter2">Chapter 2: Basics</a></li>
+</ul>
+
+<!-- Global Navigation: Links available across all pages -->
+<nav>
+  <ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Sidebar Navigation (local) for smaller screens -->
+<div class="sidebar">
+  <a href="#section1">Section 1</a>
+  <a href="#section2">Section 2</a>
+</div>
+
+<!-- Simple Form with Submit Button -->
+<form action="/submit" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <input type="submit" value="Submit">
+  </form>
+  
+  <!-- Form with Radio Buttons and Checkbox -->
+  <form>
+    <fieldset>
+      <legend>Choose your favorite student:</legend>
+      <label>
+        <input type="radio" name="student" value="Blendan"> Blendan Smooth
+      </label>
+      <label>
+        <input type="radio" name="student" value="Hoover"> Hoover Sukhdeep
+      </label>
+    </fieldset>
+  
+    <label>
+      <input type="checkbox" name="newsletter"> Subscribe to newsletter
+    </label>
+  
+    <input type="submit" value="Submit">
+  </form>
+  
+  <!-- File Upload Input -->
+  <form>
+    <label for="avatar">Upload your Avatar:</label>
+    <input type="file" id="avatar" name="avatar" accept="image/*">
+    
+    <input type="submit" value="Submit">
+  </form>
+  
+  <!-- Form with File Input, Email, and Submit -->
+  <form method="POST" action="/upload" enctype="multipart/form-data">
+    <label for="resume">Upload Resume (PDF only):</label>
+    <input type="file" id="resume" name="resume" accept=".pdf" required>
+    
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <input type="submit" value="Upload">
+  </form>
+  
+
+<form>
+    <!-- Required field -->
+    <label for="username">Username (required):</label>
+    <input type="text" id="username" name="username" required>
+  
+    <!-- Email validation -->
+    <label for="email">Email (required):</label>
+    <input type="email" id="email" name="email" required>
+  
+    <!-- Number input with min/max -->
+    <label for="age">Age (18-100):</label>
+    <input type="number" id="age" name="age" min="18" max="100" required>
+  
+    <!-- Password with min/max length -->
+    <label for="password">Password (min 8 characters):</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+  
+    <!-- Custom pattern for phone number -->
+    <label for="phone">Phone Number (format: 123-456-7890):</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+  
+
+</body>
+</html>
