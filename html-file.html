@@ -367,6 +367,37 @@
     <!-- Submit Button -->
     <input type="submit" value="Submit">
   </form>
+
+   <!-- Button to open the dialog -->
+   <button id="openDialogButton">Open Modal Dialog</button>
+
+   <!-- The modal dialog -->
+   <dialog id="myDialog" aria-labelledby="dialog-title">
+     <h1 id="dialog-title">Confirmation</h1>
+     <p>Are you sure you want to proceed?</p>
+     <form method="dialog">
+       <!-- Submit button with autofocus -->
+       <button type="submit" autofocus>Close</button>
+     </form>
+   </dialog>
+ 
+   <script>
+     // Select the dialog and the button
+     const dialog = document.getElementById('myDialog');
+     const openDialogButton = document.getElementById('openDialogButton');
+ 
+     // Event to open the dialog
+     openDialogButton.addEventListener('click', () => {
+       dialog.showModal();
+     });
+ 
+     // Optional: Add functionality to close the dialog when escape key is pressed
+     dialog.addEventListener('keydown', (event) => {
+       if (event.key === 'Escape') {
+         dialog.close();
+       }
+     });
+   </script>
   
 
 </body>
